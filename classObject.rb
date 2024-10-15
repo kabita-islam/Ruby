@@ -17,10 +17,12 @@ class Person
   def self.personCount
     return @@personCount
   end
+
 end
 
 #create a person
 p1 = Person.new(1,"aaa",10)
 p2 = Person.new(2,"bbb",12)
-#p1.intro  #call the class
+p1.intro  #call the class
+p2.intro
 puts Person.personCount
