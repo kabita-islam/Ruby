@@ -21,10 +21,10 @@
 
 ###  loop
 
-j=1
-while j<=10
-    if j%2==0
-        puts j
-    end
-    j+=1
-end
+# j=1
+# while j<=10
+#     if j%2==0
+#         puts j
+#     end
+#     j+=1
+# end
