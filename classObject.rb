@@ -1,7 +1,14 @@
  / @-->instance variable, @@-->class variable /
 
 
-class Person
+
+class Human
+  def evole
+    puts "aaaaaaaaaa"
+  end
+end
+
+class Person < Human
   def initialize(id,name,age)   #constructor
     @@personCount =0
     @id = id      #instance variable
@@ -21,8 +28,10 @@ class Person
 end
 
 #create a person
-p1 = Person.new(1,"aaa",10)
-p2 = Person.new(2,"bbb",12)
-p1.intro  #call the class
-p2.intro
-puts Person.personCount
+ p1 = Person.new(1,"aaa",10)
+# p2 = Person.new(2,"bbb",12)
+# p1.intro  #call the class
+# p2.intro
+# puts Person.personCount
+
+a1=p1.evole
