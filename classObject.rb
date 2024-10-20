@@ -1,4 +1,4 @@
- / @-->instance variable, @@-->class variable /
+#  / @-->instance variable, @@-->class variable /
 
 
 
@@ -10,7 +10,7 @@ end
 
 class Person < Human
   def initialize(id,name,age)   #constructor
-    @@personCount =0
+    @@personCount =0   #class variable
     @id = id      #instance variable
     @name = name   
     @age = age
