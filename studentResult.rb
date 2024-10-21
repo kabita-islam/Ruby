@@ -32,9 +32,9 @@ def failStatus
 end
 
 def marksValidation
-  if(($course1<0 && $course1>100) || ($course2<0 && $course2>100)|| 
-    ($course3<0 && $course3>100)|| ($course4<0 && $course4>100)|| 
-    ($course5<0 && $course5>100))
+  if(($course1<0 || $course1>100) || ($course2<0 || $course2>100)|| 
+    ($course3<0 || $course3>100)|| ($course4<0 || $course4>100)|| 
+    ($course5<0 || $course5>100))
     #puts "Invalid\n"
     return true
   else
@@ -47,7 +47,7 @@ def studentResult
   if failStatus || marksValidation
     if failStatus
       puts "Failed\n"
-    elsif marksValidation
+    elsif marksValidation==true
       puts "Marks Invalid\n"
     end
   else
