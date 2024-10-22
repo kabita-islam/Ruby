@@ -35,12 +35,6 @@ class Book
 
     def function
         puts "Ruby on Rials\n"
-        # if(book1.num<3)
-        #     puts "true\n"
-        # end
-        # else
-        #     puts "false\n"
-        # end
     end
 end
 
