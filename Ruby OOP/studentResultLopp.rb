@@ -30,7 +30,7 @@ def totalMarks
 end
 
 def averageMarks
-   @@avgMarks = @@totalMarks / 5
+  @@avgMarks = @@totalMarks / 5
   return @@avgMarks
 end
 
