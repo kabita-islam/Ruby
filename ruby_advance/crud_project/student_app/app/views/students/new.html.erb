@@ -1,0 +1,19 @@
+<h3> Fill Up Students Information : </h3>
+
+<%= form_for @student do |t|  %>
+<p>
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+</p>
+<p>
+    <%= t.label :student_id %>
+    <%= t.text_field :student_id %>
+</p>
+<p>
+    <%= t.label :department %>
+    <%= t.text_field :department %>
+</p>
+<p>
+    <%= t.submit %>
+</p>
+<% end %>

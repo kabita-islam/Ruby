@@ -1,0 +1,19 @@
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/student_app/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/student_app/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241121-46243-jcd6qa sitelibdir\=./.gem.20241121-46243-jcd6qa clean
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/student_app/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241121-46243-jcd6qa sitelibdir\=./.gem.20241121-46243-jcd6qa
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/student_app/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241121-46243-jcd6qa sitelibdir\=./.gem.20241121-46243-jcd6qa install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241121-46243-jcd6qa/debug
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/student_app/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241121-46243-jcd6qa sitelibdir\=./.gem.20241121-46243-jcd6qa clean
