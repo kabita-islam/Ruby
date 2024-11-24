@@ -1,0 +1,16 @@
+<h3> Update Students Information : </h3>
+
+<%= form_for @student do |t|  %>
+<p>
+    <%= t.label :name %>
+    <%= t.text_field :name %>
+</p>
+
+<p>
+    <%= t.label :department %>
+    <%= t.text_field :department %>
+</p>
+<p>
+    <%= t.submit %>
+</p>
+<% end %>

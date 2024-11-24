@@ -1,16 +1,28 @@
 <h3> Students Information List </h3>
 
-<table>
+<%= link_to "Create New Student",  new_student_path %>
+
+<div class="container">
+  <table class="table table-striped">
     <thead>
+      <tr>
         <th>Id</th>
-        <th>Student's Name</th>
-        <th>Student Id</th>
+        <th> Name</th>
         <th>Department</th>
+        <th>Edit</th>
+      </tr>
     </thead>
     <tbody>
-        <td><%= student.id %></td>
-        <td><%= student.name %></td>
-        <td><%= student.student_id %></td>
-        <td><%= student.department %></td>
+      <% @students.each do |t| %>
+        <tr>
+          <td><%= t.id %></td>
+          <td><%= t.name %></td>
+          <td><%= t.department %></td>
+          <td><%= link_to "Show" , student_path(t) %></td>
+          <td><%= link_to "Edit" , edit_student_path(t) %></td>
+          <td><%= link_to "Delete", student_path(t) , method: :delete  %></td>
+        </tr>
+      <% end %>
     </tbody>
-</table>
+  </table>
+</div>
