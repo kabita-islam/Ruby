@@ -1,0 +1,17 @@
+<%= form_for  @list do |l| %>
+<p>
+<%= l.label :name%>
+<%= l.text_field :name%>
+</p>
+
+<p>
+<%= l.label :roll%>
+<%= l.text_field :roll%>
+</p>
+
+<p>
+<%= l.label :grade%>
+<%= l.text_field :grade%>
+</p>
+<%= l.submit %>
+<% end %>

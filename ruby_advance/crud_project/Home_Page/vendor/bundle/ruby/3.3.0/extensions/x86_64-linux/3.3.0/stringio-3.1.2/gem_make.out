@@ -1,0 +1,18 @@
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-jc0f4m sitelibdir\=./.gem.20241126-12956-jc0f4m clean
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-jc0f4m sitelibdir\=./.gem.20241126-12956-jc0f4m
+compiling stringio.c
+linking shared-object stringio.so
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-jc0f4m sitelibdir\=./.gem.20241126-12956-jc0f4m install
+/usr/bin/install -c -m 0755 stringio.so ./.gem.20241126-12956-jc0f4m
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/stringio-3.1.2/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-jc0f4m sitelibdir\=./.gem.20241126-12956-jc0f4m clean

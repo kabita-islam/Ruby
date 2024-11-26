@@ -1,0 +1,19 @@
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-v3cni7 sitelibdir\=./.gem.20241126-12956-v3cni7 clean
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-v3cni7 sitelibdir\=./.gem.20241126-12956-v3cni7
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-v3cni7 sitelibdir\=./.gem.20241126-12956-v3cni7 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20241126-12956-v3cni7/debug
+
+current directory: /home/kabita/Documents/Ruby/ruby_advance/crud_project/Home_Page/vendor/bundle/ruby/3.3.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20241126-12956-v3cni7 sitelibdir\=./.gem.20241126-12956-v3cni7 clean

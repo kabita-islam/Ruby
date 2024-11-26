@@ -1,0 +1,26 @@
+<h3>List of All :</h3>
+
+<%= link_to "Create New Record",new_list_path%>
+<table class="table ">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Grade</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @lists.each do |l| %>
+    <tr>
+      <td ><%= l.id %></td>
+      <td><%= l.name %></td>
+      <td><%= l.roll %></td>
+      <td><%= l.grade %></td>
+      <td><%= link_to "Edit" ,edit_list_path(l) %></td>
+      <td><%= link_to "Show" ,list_path(l) %></td>
+    </tr>
+    <% end %> 
+  </tbody>
+</table>

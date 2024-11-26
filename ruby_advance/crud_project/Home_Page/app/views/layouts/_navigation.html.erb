@@ -1,18 +1,20 @@
- <nav class="navbar navbar-inverse">
+ <nav class="navbar" >
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <%= link_to "Alpha Blog", root_path, class:"navbar-brand",id:"logo"%>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
+      <li>      
+        <%= link_to "ALL",  lists_path  , class:"nav navbar-nav",id:"form"%>
+      </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page 2 <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Query <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Subpage 1</a></li>
-          <li><a href="#">Subpage 2</a></li>
-          <li><a href="#">Subpage 3</a></li>
+          <li>
+            <%= link_to "Create New Record",  new_list_path  , class:"nav navbar-nav",id:"form"%>
+          </li>
+          
         </ul>
       </li>
     </ul>

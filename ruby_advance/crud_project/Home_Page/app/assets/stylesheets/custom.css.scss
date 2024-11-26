@@ -1,2 +1,33 @@
+.navbar{
+   background-color:skyblue ;
+   color: black
+}
+#logo{
+    float: left ;
+    font-size: 1.7em ;
+    color:darkcyan;
+    text-transform: uppercase ;
+    letter-spacing: -1px;
+    font-weight: bold;
+
+}
+#logo:hover{
+    color:darkblue;
+    text-decoration: none ;
+}
+
+.jumbotron{
+    margin: auto ;
+    width:25cm;
+    height: 8cm;
+}
+
+#signin{
+    margin-left: 20px ;
+}
+
+#welcome{
+    margin-left: 20px;
+}
 @import "bootstrap-sprockets";
 @import "bootstrap";
