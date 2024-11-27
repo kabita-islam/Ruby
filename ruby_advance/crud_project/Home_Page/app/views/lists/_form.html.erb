@@ -1,17 +1,47 @@
-<%= form_for  @list do |l| %>
-<p>
-<%= l.label :name%>
-<%= l.text_field :name%>
-</p>
-
-<p>
-<%= l.label :roll%>
-<%= l.text_field :roll%>
-</p>
-
-<p>
-<%= l.label :grade%>
-<%= l.text_field :grade%>
-</p>
-<%= l.submit %>
+<% if @list.errors.any? %>
+<h2>The following errors are identified : </h2>
+<ul>
+    <%= @list.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+</ul>
 <% end %>
+
+<div class="row">
+    <div class="col-xs-12">
+        <%= form_for(@list, :html => {class: "form-horizontal",role: "form"}) do |l| %>
+    <div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= l.label :name%>
+        </div>
+        <div class="col-sm-10">
+            <%= l.text_field :name,class: "form-control" , placeholder:"Enter Name", autofocus:true %>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="control-label col-sm-2">
+             <%= l.label :roll%>
+        </div>
+        <div class="col-sm-10">
+            <%= l.text_field :roll,class: "form-control",  placeholder:"Enter Roll", autofocus:true%>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="control-label col-sm-2">
+            <%= l.label :grade %>
+        </div>
+        <div class="col-sm-10">
+            <%= l.text_field :grade ,class: "form-control",  placeholder:"Enter Grade", autofocus:true%>
+        </div>
+    </div>
+    <div class="form-group ">
+    <div class="col-sm-offset-2 col-sm-10">
+        <%= l.submit class:'btn btn-info btn-lg ' %>
+    </div>
+    </div>
+        <% end %>
+    </div>
+</div>
+
