@@ -19,10 +19,11 @@
     color:black;
     text-decoration: none ;
 }
-.jumbotron{
+.bg-cover{
     background-image: url('cover.jpg') ;
     background-size: cover ;
     height: 600px;
+    margin-top: 60px;
 
 }
 .jumbotron,h2{
@@ -35,7 +36,7 @@
 }
 
 #footer{
-    position: relative ;
+    position: fixed ;
     width: 100%;
     height: 40px;
     bottom:0;
@@ -53,6 +54,9 @@
 
 #show{
     justify-content: center ;
+}
+#timestamps{
+    color: darkred ;
 }
 @import "bootstrap-sprockets";
 @import "bootstrap";

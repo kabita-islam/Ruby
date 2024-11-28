@@ -6,12 +6,20 @@
     <h4 class="center"><strong>Roll : <%= l.roll%></strong></h4>
     <hr>  
     <h4 class="center"><strong>Grade : <%= l.grade%> </strong></h4>
+    <hr> 
+    <h4 class="center"><strong>Username : <%= l.user.username if l.user %> </strong></h4>
+    <hr>
+    <h4 class="center"><strong>Email : <%= l.user.email if l.user%> </strong></h4>
+    <hr>
+    <h4 class="center"><strong>Id : <%= l.user_id%> </strong></h4>
     <hr>   
+    <p class="center" id="timestamps" > <%= l.created_at%> | <%= l.updated_at%> </p>
+    <hr>
     <div class="article-actions">
         <%= link_to "Show this record" , list_path(l) , class: "btn btn-success btn-sm btn-xlarge " %>
         <%= link_to "Edit this record" ,  edit_list_path(l) , class: "btn btn-primary btn-sm btn-xlarge " %>
         <%= link_to "Back to record listing" , lists_path , class: "btn btn-info btn-sm btn-xlarge " %>
-        <%= link_to "Delete the Record" , lists_path(l),method: :delete ,class: "btn btn-danger btn-sm btn-xlarge " %>
+        <%# link_to "Delete the Record" , lists_path(l),method: :delete ,class: "btn btn-danger btn-sm btn-xlarge "  %>
     </div>
 </div>
   <% end %>

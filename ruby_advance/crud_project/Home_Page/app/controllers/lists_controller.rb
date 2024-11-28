@@ -8,10 +8,12 @@ class ListsController < ApplicationController
   end
    
   def create
+    #debugger
     @list = List.new(list_params)
+   # @list.user = User.first
     if @list.save
       flash[:notice]= "Record is ceated successfully."
-      redirect_to lists_path(@list)
+      redirect_to list_path(@list)
     else
       render :new
     end
@@ -31,7 +33,7 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
     if @list.update(list_params)
       flash[:notice] = "Updated Successfully."
-      redirect_to lists_path
+      redirect_to lists_path(@list)
     else
       render :edit
     end
