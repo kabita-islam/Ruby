@@ -1,0 +1,16 @@
+<h1 align="center">List of All Users</h1>
+  <% @users.each do |l| %>
+<div class="well col-xs-8 col-xs-offset-2" id="listColor" >
+    <h4 class="center"><strong>User Name : <%= l.username%></strong></h4>
+    <hr>
+    <h4 class="center"><strong>Email : <%= l.email%></strong></h4>
+    <hr>     
+    <div class="article-actions">
+        <%= link_to "Show this user" , user_path(l) , class: "btn btn-success btn-sm btn-xlarge " %>
+        <%= link_to "Edit this record" ,  edit_user_path(l) , class: "btn btn-primary btn-sm btn-xlarge " %>
+        <%= link_to "Back to record listing" , lists_path , class: "btn btn-info btn-sm btn-xlarge " %>
+        <%# link_to "Delete the Record" , lists_path(l),method: :delete ,class: "btn btn-danger btn-sm btn-xlarge "  %>
+    </div>
+</div>
+  <% end %>
+

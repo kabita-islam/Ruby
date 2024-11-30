@@ -8,14 +8,13 @@ class ListsController < ApplicationController
   end
    
   def create
-    #debugger
     @list = List.new(list_params)
-   # @list.user = User.first
+    @list.user = User.first
     if @list.save
       flash[:notice]= "Record is ceated successfully."
-      redirect_to list_path(@list)
+      redirect_to lists_path(@list)
     else
-      render :new
+      render :new, status: 422
     end
   end
 
