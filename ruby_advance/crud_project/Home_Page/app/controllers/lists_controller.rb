@@ -4,12 +4,12 @@ class ListsController < ApplicationController
   end
 
   def index
-    @lists = List.all
+    @lists = List.paginate(page: params[:page], per_page: 5)
   end
    
   def create
     @list = List.new(list_params)
-    @list.user = User.first
+    @list.user = User.last
     if @list.save
       flash[:notice]= "Record is ceated successfully."
       redirect_to lists_path(@list)

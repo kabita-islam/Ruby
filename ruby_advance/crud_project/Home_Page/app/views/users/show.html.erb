@@ -1,13 +1,12 @@
-<h2 align="center">User Details </h2>
-
-<div class="well col-xs-8 col-xs-offset-2" id="show">
-    <h4 class="center"><strong>Usename : <%= @user.username%></strong></h4>
-    <hr>
-    <h4 class="center"><strong>Email : <%= @user.email%></strong></h4>
-    <hr>     
-    <div class="article-actions">
-        <%= link_to "Edit User" ,  edit_user_path(@user), class: "btn btn-primary btn-sm btn-xlarge " %>
-        <%# <%= link_to "Back to record listing" , lists_path , class: "btn btn-info btn-sm btn-xlarge " %> 
-        <%= link_to "Delete the Record" ,  class: "btn btn-danger btn-sm btn-xlarge " %>
-    </div>
+<h2 align="center" >Welcome to <%=@user.username%>'s Page </h2>
+<div class="row">
+<div align="center" class="col-md-4 col-md-offset-4 center" >
+    <%= gravatar_for @user, size: 150 %>
 </div>
+</div><br>
+
+
+<%= render 'lists/list' , obj: @user.lists %>
+   
+
+
