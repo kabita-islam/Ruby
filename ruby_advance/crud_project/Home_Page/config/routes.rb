@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   resources :lists 
   get "signup" , to: "users#new"
   resources :users
+  get "login", to: "sessions#new"
+  post "login", to: "sessions#create"
+  delete "logout", to: "sessions#destroy", as: "logout"
+
   # resources :users, except: [:new, :edit]
   # post "users", to: "user#create"
   # get "user/:id/edit" , to: "user#edit" , as: :edit_user

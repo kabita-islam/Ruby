@@ -6,11 +6,15 @@
 #logo{
     float: left ;
     font-size: 1.7em ;
-    color:white;
+    color:darkslategrey;
     text-transform: uppercase ;
     letter-spacing: -1px;
     font-weight: bold;
 
+}
+#navform{
+    align-items: center;
+    justify-content: center;
 }
 .ms-auto{
     justify-content: right;
@@ -67,6 +71,9 @@
 #gravlist{
     list-style: none;
     justify-content: center ;
+}
+#navsignup{
+    float: right ;
 }
 @import "bootstrap-sprockets";
 @import "bootstrap";
