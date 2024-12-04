@@ -17,12 +17,15 @@
     <%= time_ago_in_words(l.created_at)%> ago , Updated at <%=time_ago_in_words(l.updated_at)%> ago.
     </small>
     <hr>
+    <% if logged_in? && current_user == l.user %>
     <div class="article-actions">
         <%= link_to "Show this record" , list_path(l) , class: "btn btn-success btn-sm btn-xlarge " %>
         <%= link_to "Edit this record" ,  edit_list_path(l) , class: "btn btn-primary btn-sm btn-xlarge " %>
+        <%# <%= button_to "Delete this record", lists_path(l), data: { turbo_method: :delete } , class:"btn btn-danger btn-sm btn-xlarge "%>
         <%= link_to "Back to record listing" , lists_path , class: "btn btn-info btn-sm btn-xlarge " %>
         <%# link_to "Delete the Record" , lists_path(l),method: :delete ,class: "btn btn-danger btn-sm btn-xlarge "  %>
     </div>
+    <% end %>
 </div>
 <% end %>
 <% end %>

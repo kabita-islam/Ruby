@@ -7,10 +7,10 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       flash[:success] = "Successfully logged in"
-      redirect_to users_path(user)
+      redirect_to users_path(user) , :flash => {:success => "Successfully logged in"}
     else
-      flash[:danger] = "There was something wrong with your login"
-      render :new
+       flash[:danger] = "There was something wrong with your login"
+      render :new, :flash => {:danger => "There was something wrong with your login"}
     end
   end
   def destroy
