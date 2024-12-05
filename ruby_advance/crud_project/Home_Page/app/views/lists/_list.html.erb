@@ -1,18 +1,8 @@
 <% obj.each do |l| %>
 <% if l.user %>
 <div class="well col-xs-8 col-xs-offset-2" >
-    <h4 class="center"><strong>Name : <%= l.name if l.user%></strong></h4>
+    <h4 class="center"><%= link_to "#{l.user.username}'s List" ,list_path(l)  %></h4>
     <hr>
-    <h4 class="center"><strong>Roll : <%= l.roll if l.user%></strong></h4>
-    <hr>  
-    <h4 class="center"><strong>Grade : <%= l.grade if l.user%> </strong></h4>
-    <hr> 
-    <h4 class="center"><strong>Username : <%= l.user.username if l.user %> </strong></h4>
-    <hr>
-    <h4 class="center"><strong>Email : <%= l.user.email if l.user%> </strong></h4>
-    <hr>
-    <h4 class="center"><strong>Id : <%= l.user_id%> </strong></h4>
-    <hr>   
     <small class="center" id="timestamps" > Created By <%=l.user.username %> ,  
     <%= time_ago_in_words(l.created_at)%> ago , Updated at <%=time_ago_in_words(l.updated_at)%> ago.
     </small>
