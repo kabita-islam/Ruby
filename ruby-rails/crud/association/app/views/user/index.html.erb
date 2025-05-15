@@ -1,0 +1,30 @@
+<h1>All Articles :</h1>
+
+ <%= link_to "Create New User",  new_users_path %>
+
+<table class="table" style="width: 600px;">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">User Name</th>
+      <th scope="col">User Email</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |u|%>
+    <tr>
+       <td> <%= u.id %> </td> 
+       <td> <%= u.username%> </td> 
+       <td> <%= u.email%> </td> 
+       <td>
+        <%= link_to "Edit", edit_users_path(u)%>
+        <%= link_to "Show", show_users_path(u)%>
+        <%= link_to "Delete", delete_users_path(u),
+        method: :delete, data: {turbo_method: :delete,turbo_confirm: "Are you sure to delete?"}%>
+       </td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>

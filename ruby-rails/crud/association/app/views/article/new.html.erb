@@ -1,0 +1,25 @@
+<h3>Create new article:</h3>
+
+<% if @article.errors.any? %>
+<div class="alert alert-danger">
+        <h5>There are some errors :</h5>
+<ul>
+<% @article.errors.full_messages.each do |msg| %>
+    <li>
+    <%= msg%>
+    </li>
+</ul>
+</div>
+<% end%>
+<% end %>
+
+
+<p>
+    <%= form_with model: @article, url:  new_articles_path, local: true, data:{turbo: false} do |a|%>
+    <p>
+        <%= a.label :name%><br>
+        <%= a.text_field :name%>
+    </p>
+    <p><%= a.submit %></p>
+    <% end %>
+</p>

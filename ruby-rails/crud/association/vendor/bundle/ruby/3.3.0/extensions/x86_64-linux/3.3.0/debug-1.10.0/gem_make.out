@@ -1,0 +1,19 @@
+current directory: /home/kabita/Documents/ruby-rails/crud/association/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/ruby-rails/crud/association/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250515-23975-mgauf4 sitelibdir\=./.gem.20250515-23975-mgauf4 clean
+
+current directory: /home/kabita/Documents/ruby-rails/crud/association/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250515-23975-mgauf4 sitelibdir\=./.gem.20250515-23975-mgauf4
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/kabita/Documents/ruby-rails/crud/association/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250515-23975-mgauf4 sitelibdir\=./.gem.20250515-23975-mgauf4 install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250515-23975-mgauf4/debug
+
+current directory: /home/kabita/Documents/ruby-rails/crud/association/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250515-23975-mgauf4 sitelibdir\=./.gem.20250515-23975-mgauf4 clean

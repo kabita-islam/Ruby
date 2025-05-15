@@ -1,0 +1,27 @@
+<h1>All Articles :</h1>
+
+ <%= link_to "Create New Article",  articles_path %>
+
+<table class="table" style="width: 600px;">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Article Name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @articles.each do |a|%>
+    <tr>
+       <td> <%= a.id %> </td> 
+       <td> <%= a.name%> </td> 
+       <td>
+        <%= link_to "Edit", edit_articles_path(a)%>
+        <%= link_to "Show", show_articles_path(a)%>
+        <%= link_to "Delete", delete_articles_path(a)%>
+       </td>
+    </tr>
+
+    <% end %>
+  </tbody>
+</table>
