@@ -1,0 +1,21 @@
+Integers anf float
+
+It’s important to keep in mind that when doing arithmetic with two integers in Ruby, the result will always be an integer.
+
+17 / 5    #=> 3, not 3.4
+
+To obtain an accurate answer, just replace one of the integers in the expression with a float.
+
+17 / 5.0  #=> 3.4
+
+
+
+--------------------------------------variable-----------------------
+
+------->Instance Variable
+
+ instance variable starting with @ symbol
+ instance variables do not need a declaration.
+ 
+ 
+

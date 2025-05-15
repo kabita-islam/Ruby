@@ -1,0 +1,18 @@
+current directory: /home/kabita/Documents/ruby-rails/crud/test-app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/ruby-rails/crud/test-app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250512-10026-fk4x4g sitelibdir\=./.gem.20250512-10026-fk4x4g clean
+
+current directory: /home/kabita/Documents/ruby-rails/crud/test-app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250512-10026-fk4x4g sitelibdir\=./.gem.20250512-10026-fk4x4g
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/kabita/Documents/ruby-rails/crud/test-app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250512-10026-fk4x4g sitelibdir\=./.gem.20250512-10026-fk4x4g install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250512-10026-fk4x4g/racc
+
+current directory: /home/kabita/Documents/ruby-rails/crud/test-app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250512-10026-fk4x4g sitelibdir\=./.gem.20250512-10026-fk4x4g clean

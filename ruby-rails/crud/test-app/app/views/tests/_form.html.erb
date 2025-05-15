@@ -1,0 +1,17 @@
+<%= render "error", test: test %>
+  
+
+<%= form_with model: test, local: true, data: { turbo: false}, local:true do |ts| %>
+<p>
+    <%= ts.label :name %> <br>
+    <%= ts.text_field :name %>
+</p>
+<p>
+    <%= ts.label :age %><br>
+    <%= ts.text_field :age%>
+</p>
+<p>
+    <%= ts.submit %>
+</p>
+
+<% end %>

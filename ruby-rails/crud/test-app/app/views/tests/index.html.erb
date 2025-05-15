@@ -1,0 +1,27 @@
+<h3>All Tests </h3><hr>
+
+      <td><%= link_to 'Create New Test',  new_tests_path  %></td>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tests.each do |t| %>
+    <tr>
+      <td> <%= t.id %> </td>
+      <td> <%= t.name %> </td>
+      <td> <%= t.age %> </td>
+      <td><%= link_to 'Edit', edit_tests_path(t) %></td>
+      <td><%= link_to 'Delete', delete_tests_path(t), method: :delete, data: {turbo_method: :delete, turbo_confirm: "Are you confirm to delete?"} %></td>
+    </tr>
+    <% end%>
+   
+  </tbody>
+</table>

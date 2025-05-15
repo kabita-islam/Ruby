@@ -1,0 +1,19 @@
+current directory: /home/kabita/Documents/ruby-rails/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+/home/kabita/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kabita/Documents/ruby-rails/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250508-13437-kv5azo sitelibdir\=./.gem.20250508-13437-kv5azo clean
+
+current directory: /home/kabita/Documents/ruby-rails/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250508-13437-kv5azo sitelibdir\=./.gem.20250508-13437-kv5azo
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/kabita/Documents/ruby-rails/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250508-13437-kv5azo sitelibdir\=./.gem.20250508-13437-kv5azo install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250508-13437-kv5azo/debug
+
+current directory: /home/kabita/Documents/ruby-rails/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250508-13437-kv5azo sitelibdir\=./.gem.20250508-13437-kv5azo clean
