@@ -7,6 +7,8 @@
     <tr>
       <th scope="col">Id</th>
       <th scope="col">Article Name</th>
+      <th scope="col">User Id</th>
+      <th scope="col">User Name</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -15,6 +17,8 @@
     <tr>
        <td> <%= a.id %> </td> 
        <td> <%= a.name%> </td> 
+       <td> <%= a.user_id %> </td> 
+        <td> <%= a.user&.username || "Unknown User" %> </td> 
        <td>
         <%= link_to "Edit", edit_articles_path(a)%>
         <%= link_to "Show", show_articles_path(a)%>

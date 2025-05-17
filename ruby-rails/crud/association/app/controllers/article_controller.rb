@@ -8,7 +8,9 @@ class ArticleController < ApplicationController
   end
 
   def create
+   # debugger
     @article=Article.new(article_params)
+    #@article.user=User.find(2)
     if @article.save
       redirect_to all_articles_path(@article)
     else
