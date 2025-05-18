@@ -7,7 +7,14 @@ gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
 # gem "sqlite3", ">= 1.4"
 gem "mysql2"
+# for password
 gem "bcrypt", "~>3.1.7"
+# for paginate
+gem "kaminari"
+#  gem "will_paginate", "~> 3.1.0.pre2"
+#  gem "bootstrap-will_paginate", "~> 0.0.10"
+
+
 gem "bootstrap-sass", "~> 3.4.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"

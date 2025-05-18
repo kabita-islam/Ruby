@@ -1,0 +1,21 @@
+<h3>Log In</h3>
+
+
+
+<%= form_with scope: :session,  url: new_login_path, local: true, data: { turbo: false}  do |u| %>
+<p>
+    <%= u.label :email%>
+    <%= u.email_field :email%>
+</p>
+
+<p>
+    <%= u.label :password%>
+    <%= u.password_field :password%>
+</p>
+
+<p>
+    <%= u.submit "log In" , class: 'btn btn-primary btn-lg' %>
+</p>
+
+<% end %>
+   

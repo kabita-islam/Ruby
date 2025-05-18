@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  scope "/" do
+    controller :session do
+      get "/login", action: :new, as: "new_login"
+      post "/login", action: :create, as: "create_login"
+
+      delete "/logout", action: :destroy, as: "logout"
+
+    end
+  end
   scope "/article" do
     controller :article do
       get "/index", action: :index, as: "all_articles"

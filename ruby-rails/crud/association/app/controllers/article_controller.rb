@@ -1,6 +1,8 @@
 class ArticleController < ApplicationController
   def index
     @articles=Article.all
+    #@articles = Article.page(params[:page]).per(2)
+    #@articles = Article.paginate(page: params[:page], per_page: 2)
   end
 
   def new
@@ -8,9 +10,8 @@ class ArticleController < ApplicationController
   end
 
   def create
-   # debugger
     @article=Article.new(article_params)
-    #@article.user=User.find(2)
+    @article.user=User.find(2)
     if @article.save
       redirect_to all_articles_path(@article)
     else
