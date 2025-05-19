@@ -1,4 +1,7 @@
 class ArticleController < ApplicationController
+  def root
+    redirect_to root_path
+  end
   def index
     @articles=Article.all
     #@articles = Article.page(params[:page]).per(2)

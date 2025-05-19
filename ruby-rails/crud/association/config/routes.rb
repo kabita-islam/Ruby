@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+   get "/", to: "user#root", as: "root"
   scope "/" do
     controller :session do
       get "/login", action: :new, as: "new_login"
